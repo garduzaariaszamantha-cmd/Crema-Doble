@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="estilos_maquetacion.css">
     <link rel="icon" type="image/png" href="img/logo-crema.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19TBM1LC04"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-19TBM1LC04');
+    </script>
 </head>
 <body>
     <header>
@@ -45,19 +54,46 @@
             <div class="swiper-slide">
                 <a href="#" class="banner-link">
                     <img src="banner/helado1.jpg" alt="Helados Premium">
+                    <div class="banner-content">
+                        <div class="text-box">
+                            <span>COLECCIÓN VERANO 2026</span>
+                            <h1>Sabores que Enamoran</h1>
+                            <p>Helados artesanales con ingredientes premium</p>
+                            <button class="btn-comprar">Ver Colección</button>
+                        </div>
+                    </div>
                 </a>
             </div>
+
             <div class="swiper-slide">
                 <a href="#" class="banner-link">
                     <img src="banner/helado2.jpg" alt="Sundae Especial">
+                    <div class="banner-content">
+                        <div class="text-box">
+                            <span>PARA MOMENTOS ESPECIALES</span>
+                            <h1>El Placer Más Dulce</h1>
+                            <p>Sundae, copas y postres irresistibles</p>
+                            <button class="btn-comprar">Explorar Ahora</button>
+                        </div>
+                    </div>
                 </a>
             </div>
+
             <div class="swiper-slide">
                 <a href="#" class="banner-link">
-                    <img src="banner/helado3.jpg" alt="Milkshakes">
+                    <img src="banner/helado3.jpg" alt="Milkshakes Premium">
+                    <div class="banner-content">
+                        <div class="text-box">
+                            <span>CREMOSIDAD EXTREMA</span>
+                            <h1>Milkshakes Premium</h1>
+                            <p>Los más cremosos y llenos de sabor</p>
+                            <button class="btn-comprar">Ver Sabores</button>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
+
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
@@ -125,8 +161,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Contacto</h4>
-                    <p>📍 Av. Central 505, Villahermosa</p>
-                    <p>📞 +52 993 333 4679</p>
+                    <p>📍 Av. Central 404, Villahermosa</p>
+                    <p>📞 +52 993 123 4567</p>
                     <p>✉️ hola@cremadoble.com</p>
                 </div>
                 <div class="footer-col">
@@ -145,8 +181,10 @@
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
                 &copy; 2026 Crema Doble. Todos los derechos reservados.
+                <span id="contador-visitas" style="margin-left: 20px; font-weight: 500; color: #FF4081;"></span>
             </div>
         </div>
     </footer>
@@ -157,5 +195,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="banner.js"></script>
+
+    <!-- Contador de visitas con LocalStorage -->
+    <script>
+        let visitas = localStorage.getItem("visitasCremaDoble");
+        
+        if (visitas === null) {
+            visitas = 0;
+        }
+        
+        visitas++;
+        localStorage.setItem("visitasCremaDoble", visitas);
+        
+        // Mostrar el contador
+        document.getElementById("contador-visitas").textContent = "👥 Visitas: " + visitas;
+    </script>
 </body>
 </html>
