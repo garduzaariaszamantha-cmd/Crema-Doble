@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crema Doble | Heladería Artesanal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="estilos_maquetacion.css">
+    <link rel="icon" type="image/png" href="img/logo-crema.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo-crema.jpg" alt="Crema Doble">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fi fi-rr-home"></i> Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-rr-ice-cream"></i> Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Helados Artesanales</a></li>
+                            <li><a href="#">Sundae y Copas</a></li>
+                            <li><a href="#">Milkshakes Premium</a></li>
+                            <li><a href="#">Postres Helados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fi fi-rr-tags"></i> Promociones</a></li>
+                    <li><a href="#"><i class="fi fi-rr-phone-call"></i> Contacto</a></li>
+                    <li><a href="login.html" class="btn-login"><i class="fi fi-rr-user"></i> Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="swiper mainBanner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/helado1.jpg" alt="Helados Premium">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/helado2.jpg" alt="Sundae Especial">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/helado3.jpg" alt="Milkshakes">
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <main class="container" style="padding: 100px 0;">
+        <h1 style="font-size: 3.2rem; margin-bottom: 20px; color: #FF4081;">Crema Doble</h1>
+        <p style="font-size: 1.25rem; max-width: 700px; margin-bottom: 50px; line-height: 1.6;">
+            Helados artesanales, milkshakes cremosos y postres irresistibles.<br>
+            <strong>El sabor que te hace sonreír.</strong>
+        </p>
+
+        <section class="seccion-info">
+            <h2 class="titulo-seccion">Productos Destacados</h2>
+            <div class="contenedor-dos">
+                <div class="cuadro cuadro-grande">
+                    <div class="imagen-placeholder">
+                        <img src="img/helados-premium.jpg" alt="Helados Premium">
+                    </div>
+                    <h3>Helados Artesanales</h3>
+                    <p>Sabores únicos hechos con ingredientes premium y amor.</p>
+                    <a href="#" class="leer-mas">Ver sabores</a>
+                </div>
+                <div class="cuadro cuadro-grande">
+                    <div class="imagen-placeholder">
+                        <img src="img/sundae.jpg" alt="Sundae">
+                    </div>
+                    <h3>Sundae y Copas</h3>
+                    <p>La experiencia más dulce. Perfectos para compartir.</p>
+                    <a href="#" class="leer-mas">Ver más</a>
+                </div>
+            </div>
+
+            <h2 class="titulo-seccion">Promociones y Novedades</h2>
+            <div class="contenedor-tres">
+                <div class="cuadro cuadro-pequeno">
+                    <div class="media-container">
+                        <img src="img/promo-helado.jpg" alt="Promo">
+                    </div>
+                    <h4>Promo Especial</h4>
+                    <p>2 helados medianos + topping por solo $89</p>
+                </div>
+                <div class="cuadro cuadro-pequeno">
+                    <div class="media-container">
+                        <video controls>
+                            <source src="img/video-helado.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>Nuevos Sabores</h4>
+                    <p>Prueba nuestros lanzamientos de temporada</p>
+                </div>
+                <div class="cuadro cuadro-pequeno">
+                    <div class="media-container">
+                        <img src="img/milkshake.jpg" alt="Milkshake">
+                    </div>
+                    <h4>Milkshakes Premium</h4>
+                    <p>Cremosos y llenos de sabor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Av. Central 505, Villahermosa</p>
+                    <p>📞 +52 993 333 4679</p>
+                    <p>✉️ hola@cremadoble.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Villahermosa, Tabasco</p>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60715.25331585951!2d-92.9532307!3d17.992534250000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd796d7420653%3A0xf5607b62558ae894!2sVillahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1779589686326!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Crema Doble. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/529931234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="banner.js"></script>
+</body>
+</html>

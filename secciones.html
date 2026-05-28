@@ -1,0 +1,126 @@
+<section class="seccion-info">
+    <h2 class="titulo-seccion">Novedades del Mes</h2>
+    <div class="contenedor-dos">
+        <div class="cuadro cuadro-grande">
+            <div class="imagen-placeholder">
+                <img src="img/novedad-sabores.jpg" alt="Nuevos Sabores">
+            </div>
+            <h3>Nuevos Sabores 2026</h3>
+            <p>¡Llegaron nuestros sabores más esperados! Prueba Mango con Tajín, Oreo Extreme y Churro Caramelizado.</p>
+            <a href="#" class="leer-mas">Ver todos los sabores</a>
+        </div>
+
+        <div class="cuadro cuadro-grande">
+            <div class="imagen-placeholder">
+                <img src="img/promocion-especial.jpg" alt="Promoción Especial">
+            </div>
+            <h3>Promoción de Verano</h3>
+            <p>Compra 2 helados medianos y lleva el tercero GRATIS. Válido todo el mes de junio.</p>
+            <a href="#" class="leer-mas">Aprovechar promoción</a>
+        </div>
+    </div>
+
+    <h2 class="titulo-seccion">Próximos Eventos</h2>
+    <div class="contenedor-tres">
+        <div class="cuadro cuadro-pequeno">
+            <div class="media-container">
+                <img src="img/taller-helado.jpg" alt="Taller de Helados">
+            </div>
+            <h4>Taller de Helados Artesanales</h4>
+            <p>15 de Junio - 11:00 AM</p>
+            <p><strong>$250 por persona</strong></p>
+        </div>
+
+        <div class="cuadro cuadro-pequeno">
+            <div class="media-container">
+                <video controls>
+                    <source src="img/video-eventos.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h4>Noche de Milkshakes</h4>
+            <p>20 de Junio - 06:00 PM</p>
+            <p>Música en vivo + 2x1 en milkshakes</p>
+        </div>
+
+        <div class="cuadro cuadro-pequeno">
+            <div class="media-container">
+                <img src="img/cumpleanos.jpg" alt="Cumpleaños">
+            </div>
+            <h4>Cumpleaños en Crema Doble</h4>
+            <p>Todos los fines de semana</p>
+            <p>Paquetes desde $899</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .seccion-info { padding: 40px 0; }
+    .titulo-seccion {
+        margin-bottom: 25px;
+        color: var(--color-oscuro);
+        border-left: 5px solid var(--color-primario);
+        padding-left: 15px;
+        font-weight: 600;
+    }
+    .contenedor-dos, .contenedor-tres {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .cuadro {
+        background: var(--blanco);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease;
+    }
+    .cuadro:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(255, 64, 129, 0.12);
+    }
+    .cuadro-grande { flex: 1 1 calc(50% - 20px); min-width: 300px; }
+    .cuadro-pequeno { flex: 1 1 calc(33.33% - 20px); min-width: 250px; border-top: 3px solid var(--color-primario); }
+    .imagen-placeholder {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .imagen-placeholder img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+    .cuadro:hover .imagen-placeholder img { transform: scale(1.05); }
+    .media-container {
+        width: 100%;
+        height: 180px;
+        background-color: #fff0f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        overflow: hidden;
+    }
+    .media-container img, .media-container video {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    .leer-mas {
+        display: inline-block;
+        margin-top: 15px;
+        color: var(--color-primario);
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .leer-mas:hover {
+        color: #f50057;
+        padding-left: 10px;
+    }
+</style>
